@@ -1,0 +1,198 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main-cont {
+  flex-grow: 1;
+}
+
+/* Navbar */
+
+.navbar {
+  margin: 0 auto;
+  padding: 1rem 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+.heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem !important;
+  margin: 0.5rem 0 0 0;
+  color: white;
+}
+
+.icon {
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+/* MovieCards */
+
+.container {
+  padding: 2% 5%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.helpCard {
+  border: 0.1rem solid rgb(180, 180, 180);
+  text-shadow: 1px 1px #727272;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 45vh;
+  padding: 10%;
+  border-radius: 10%;
+  color: white;
+  text-align: center;
+  background-image: url("./assets/latestmovies.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+.helpCard:hover {
+  transform: scale(1.05);
+  color: rgb(130, 188, 255);
+  background-color: black;
+  background-image: none;
+  text-shadow: none;
+}
+
+.infoCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.4rem !important;
+  font-family: "Josefin Sans", sans-serif !important;
+  font-weight: 600;
+}
+
+/* MovieCard */
+
+.media {
+  height: 200px;
+}
+
+.border {
+  border: solid;
+}
+
+.fullHeightCard {
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 10px solid white;
+}
+
+.activeCard {
+  border-bottom: 10px solid #0084ff;
+}
+
+.grid {
+  display: flex;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.original_title {
+  padding: 0 16px;
+}
+
+.cardActions {
+  padding: 0 16px 8px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  color: rgb(129, 205, 255);
+  height: 7rem;
+  background: rgba(194, 194, 194, 0.082);
+  border-top: 1px solid rgba(236, 236, 236, 0.541);
+  box-shadow: 0 0 80px rgba(110, 202, 255, 0.568);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.created-by {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.contact {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-brands {
+  font-size: 2rem;
+  color: white;
+  margin: 0 1rem;
+  transition: all 0.3s ease;
+}
+
+.fa-brands:hover {
+  color: rgb(208, 234, 255);
+}
+
+@media screen and (max-width: 1290px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description {
+    align-items: flex-end;
+  }
+
+  .weather {
+    margin-top: 2rem;
+  }
+
+  .weather-help {
+    width: 70%;
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 711px) {
+  .weather-help {
+    width: 90%;
+  }
+}
