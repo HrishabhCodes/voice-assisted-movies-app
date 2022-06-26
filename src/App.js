@@ -12,31 +12,27 @@ const moviesKey = process.env.REACT_APP_MOVIES_KEY;
 const App = () => {
   const [moviesList, setMoviesList] = useState([]);
 
+  const fetchData = (url) => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        setMoviesList(data.results);
+      });
+  };
+
   useEffect(() => {
     alanBtn({
       key: alanKey,
       onCommand: ({ command, query }) => {
         if (command === "newMovies") {
           let MOVIES_API_URL = `https://api.themoviedb.org/3/trending/movie/week?api_key=${moviesKey}&language=en-US`;
-          fetch(MOVIES_API_URL)
-            .then((res) => res.json())
-            .then((data) => {
-              setMoviesList(data.results);
-            });
+          fetchData(MOVIES_API_URL);
         } else if (command === "newTVShows") {
           let MOVIES_API_URL = `https://api.themoviedb.org/3/trending/tv/week?api_key=${moviesKey}&language=en-US`;
-          fetch(MOVIES_API_URL)
-            .then((res) => res.json())
-            .then((data) => {
-              setMoviesList(data.results);
-            });
+          fetchData(MOVIES_API_URL);
         } else if (command === "search") {
           let MOVIES_API_URL = `https://api.themoviedb.org/3/search/movie?api_key=${moviesKey}&language=en-US&query=${query}`;
-          fetch(MOVIES_API_URL)
-            .then((res) => res.json())
-            .then((data) => {
-              setMoviesList(data.results);
-            });
+          fetchData(MOVIES_API_URL);
         } else if (command === "back") {
           setMoviesList([]);
         }

@@ -25,10 +25,7 @@ const MovieCard = ({
       <CardActionArea target="_blank">
         <CardMedia
           className="media"
-          image={
-            `https://image.tmdb.org/t/p/original${backdrop_path}` ||
-            "https://www.industry.gov.au/sites/default/files/August%202018/image/news-placeholder-738.png"
-          }
+          image={`https://image.tmdb.org/t/p/original${backdrop_path}`}
         />
         <div className="details">
           <Typography variant="body2" color="textSecondary" component="h2">
