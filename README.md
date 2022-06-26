@@ -1,6 +1,6 @@
-# [NewsEra 📰](https://newsera-app.netlify.app)
+# [MovieBuff 📰](https://moviebuff-app.netlify.app)
 
-NewsEra is a conversational voice controlled React News Application. You can find latest news by categories, terms and sources. I've used Alan AI to embed the contextual voice assistant into the application UI. It's easy to use and lets you control most of the actions just by your voice.
+MovieBuff is a conversational voice controlled React movies application. One can search trending movies, TV shows and even movies by a keyword. I've used Alan AI to embed the contextual voice assistant into the application UI. It's easy to use and lets you control most of the actions just by your voice.
 
 ## Libraries and Tools Used
 
