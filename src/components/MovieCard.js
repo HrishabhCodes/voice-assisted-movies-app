@@ -16,6 +16,7 @@ const MovieCard = ({
     original_name,
     backdrop_path,
     first_air_date,
+    vote_average,
   },
   i,
 }) => {
@@ -34,6 +35,9 @@ const MovieCard = ({
             {release_date
               ? new Date(release_date).toDateString()
               : new Date(first_air_date).toDateString()}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="h2">
+            ★ {vote_average.toFixed(2)}
           </Typography>
         </div>
         <Typography

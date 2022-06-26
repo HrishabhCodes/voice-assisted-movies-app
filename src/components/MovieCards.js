@@ -4,10 +4,10 @@ import { Grid, Typography } from "@mui/material";
 import Grow from "@mui/material/Grow";
 
 const infoCards = [
-  { title: "Latest Movies", text: "Show me some latest movies" },
+  { title: "Trending Movies", text: "Show me some trending movies" },
   {
-    title: "Latest TV Shows",
-    text: "List some latest TV Shows",
+    title: "Trending TV Shows",
+    text: "List some trending TV Shows",
   },
   {
     title: "Movies by Search",

@@ -25,6 +25,10 @@
   padding: 1rem;
 }
 
+.header:hover {
+  cursor: pointer;
+}
+
 .heading {
   font-family: "Josefin Sans", sans-serif;
   font-size: 4rem !important;

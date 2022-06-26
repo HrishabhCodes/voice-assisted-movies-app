@@ -48,7 +48,7 @@ const App = () => {
     <div className="app">
       <div className="main-cont">
         <div className="navbar">
-          <div className="header">
+          <div onClick={() => setMoviesList([])} className="header">
             <img className="icon" src={Icon} alt="icon" />
             <h1 className="heading">MovieBuff</h1>
           </div>
