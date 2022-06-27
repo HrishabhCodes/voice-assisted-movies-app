@@ -9,6 +9,10 @@ MovieBuff is a conversational voice controlled React movies application. One can
 - [TheMoviesDB](https://www.themoviedb.org/)
 - [Material UI](https://mui.com)
 
+## Demo Video
+
+https://user-images.githubusercontent.com/71200145/175961305-e3be59ee-c397-4139-9166-b929d4f4028c.mp4
+
 ## Key Features
 
 - Completely voice controlled
